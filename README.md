@@ -5,7 +5,7 @@ Projet Laravel test
 
 - Installer Docker Desktop
 
-## Installation
+## Installation d'un nouveau projet
 
 Installer un nouveau projet Laravel avec Sail :
 ```
@@ -20,6 +20,17 @@ Ajouter l'API REST :
 ```
 php artisan install:api
 ```
+
+## Réinstallation du projet existant
+
+Télécharger le repo puis : 
+
+```
+composer install
+sail artisan migrate --seed
+sail up
+```
+
 
 ## Passer Sail dans le path
 
