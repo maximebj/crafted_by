@@ -16,14 +16,15 @@ curl -s "https://laravel.build/example-app" | bash
 curl -s https://laravel.build/example-app | bash
 ```
 
-Ajouter l'API REST :
+Ajouter l'API REST et les CORS :
 ```
 php artisan install:api
+php artisan config:publish cors
 ```
 
-## Réinstallation du projet existant
+## Réinstallation du projet
 
-Télécharger le repo puis : 
+Télécharger le repo depuis Github puis : 
 
 ```
 composer install
