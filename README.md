@@ -27,8 +27,8 @@ Télécharger le repo puis :
 
 ```
 composer install
-sail artisan migrate --seed
 sail up
+sail artisan migrate --seed
 ```
 
 
