@@ -64,14 +64,14 @@ Exemple :
 php artisan db:seed
 
 # Oui
-sail artisans db:seed
+sail artisan db:seed
 ```
 
 ## Commandes communes d'Artisan
 
 Créer un model complet :
 ```
-php artisan make:model Product -a 
+sail artisan make:model Product -a 
 ```
 
 Lancer les migrations : 
