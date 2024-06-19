@@ -175,10 +175,6 @@
                                         "type": "number",
                                         "format": "float",
                                         "example": 150
-                                    },
-                                    "category_id": {
-                                        "type": "integer",
-                                        "example": 2
                                     }
                                 },
                                 "type": "object"

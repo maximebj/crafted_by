@@ -99,3 +99,9 @@ Lancer les seeds :
 ```
 sail artisan db:seed
 ```
+
+## Mettre à jour la doc Swagger 
+
+```
+sail artisan l5-swagger:generate
+```
