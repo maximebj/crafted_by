@@ -71,10 +71,6 @@
                                         "type": "number",
                                         "format": "float",
                                         "example": 99.99
-                                    },
-                                    "category_id": {
-                                        "type": "integer",
-                                        "example": 1
                                     }
                                 },
                                 "type": "object"

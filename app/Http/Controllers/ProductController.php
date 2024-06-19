@@ -42,7 +42,6 @@ class ProductController extends Controller
      *             @OA\Property(property="name", type="string", example="Sample Product"),
      *             @OA\Property(property="description", type="string", example="This is a sample product"),
      *             @OA\Property(property="price", type="number", format="float", example=99.99),
-     *             @OA\Property(property="category_id", type="integer", example=1)
      *         )
      *     ),
      *     @OA\Response(
@@ -119,7 +118,6 @@ class ProductController extends Controller
      *             @OA\Property(property="name", type="string", example="Updated Product Name"),
      *             @OA\Property(property="description", type="string", example="Updated product description"),
      *             @OA\Property(property="price", type="number", format="float", example=150.00),
-     *             @OA\Property(property="category_id", type="integer", example=2)
      *         )
      *     ),
      *     @OA\Response(
