@@ -16,10 +16,11 @@ curl -s "https://laravel.build/example-app" | bash
 curl -s https://laravel.build/example-app | bash
 ```
 
-Ajouter l'API REST et les CORS :
+Ajouter l'API REST les CORS et l'auth :
 ```
 php artisan install:api
 php artisan config:publish cors
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 ```
 
 ## Réinstallation du projet
