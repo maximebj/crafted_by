@@ -1,13 +1,13 @@
 Projet Laravel test
 
+## Prérequis
 
-## Prérequis 
-
-- Installer Docker Desktop
+-   Installer Docker Desktop
 
 ## Installation d'un nouveau projet
 
 Installer un nouveau projet Laravel avec Sail :
+
 ```
 # Mac OS
 curl -s "https://laravel.build/example-app" | bash
@@ -17,6 +17,7 @@ curl -s https://laravel.build/example-app | bash
 ```
 
 Ajouter l'API REST les CORS et l'auth :
+
 ```
 php artisan install:api
 php artisan config:publish cors
@@ -25,7 +26,7 @@ php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
 
 ## Réinstallation du projet
 
-Télécharger le repo depuis Github puis : 
+Télécharger le repo depuis Github puis :
 
 ```
 composer install
@@ -33,18 +34,19 @@ sail up
 sail artisan migrate --seed
 ```
 
-
 ## Passer Sail dans le path
 
 Ouvrir `~/.zshrc` (ou `~/.bashrc` si le premier n'existe pas)
 
-Ajouter à la fin 
+Ajouter à la fin
+
 ```
-alias sail='./vendor/bin/sail' 
+alias sail='./vendor/bin/sail'
 ```
 
-Enregistrer. 
-Dans votre terminal lancez 
+Enregistrer.
+Dans votre terminal lancez
+
 ```
 source `~/.zshrc`
 ```
@@ -61,6 +63,7 @@ sail up
 ```
 
 Sans mettre sail dans le PATH :
+
 ```
 ./vendor/bin/sail up
 ```
@@ -83,26 +86,30 @@ sail artisan db:seed
 ## Commandes communes d'Artisan
 
 Créer un model complet :
+
 ```
-sail artisan make:model Product -a 
+sail artisan make:model Product -a
 ```
 
-Lancer les migrations : 
+Lancer les migrations :
+
 ```
 sail artisan migrate
 ```
 
-Réinitialiser les migrations : 
+Réinitialiser les migrations :
+
 ```
 sail artisan migrate:reset
 ```
 
 Lancer les seeds :
+
 ```
 sail artisan db:seed
 ```
 
-## Mettre à jour la doc Swagger 
+## Mettre à jour la doc Swagger
 
 ```
 sail artisan l5-swagger:generate
